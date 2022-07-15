@@ -1,0 +1,15 @@
+name: api server
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: setup Node.js environment
+        uses: actions/setup-node@v3.4.1
+      - name: run server script
+        run: node scripts/server.js
+        continue-on-error: true
