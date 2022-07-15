@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            var functions = {};
+        </script>
+        <script src="scripts/browser/index.js"></script>
+        <link rel="stylesheet" href="assets/index.css" />
+        <title>Base64 Utils</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <span>Text:</span><br />
+                    <textarea id="text"></textarea>
+                </td>
+                <td>
+                    <br />
+                    <button
+                        onclick="document.getElementById('cipher').value = functions.safelyEncodeBase64(document.getElementById('text').value)"
+                    >
+                        Base64 encoding -></button
+                    ><br />
+                    <button
+                        onclick="document.getElementById('text').value = functions.safelyDecodeBase64(document.getElementById('cipher').value)"
+                    >
+                        <- Base64 decoding
+                    </button>
+                </td>
+                <td>
+                    <span>Cipher:</span><br />
+                    <textarea id="cipher"></textarea>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

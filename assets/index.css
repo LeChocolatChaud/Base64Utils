@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+table {
+    width: 60%;
+    height: 100px;
+}
+
+tr {
+    height: 70%;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+
+td {
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
